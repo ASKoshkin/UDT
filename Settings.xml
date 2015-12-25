@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+  <Tasks>
+    
+    <Task>
+       <Name>OFAC</Name>
+       <url>https://www.treasury.gov/ofac/downloads/</url>
+       <File_download>sdn.csv</File_download>
+       <File>sdn.csv</File>
+       <File_import>sdn_import.csv</File_import>
+       <Path_Converted>C:\\import\\</Path_Converted>
+       <Download>true</Download>
+
+       <Server>srv-dia_temp</Server>
+       <DataBase>test_import</DataBase>
+       <Table>dbo.SDNList</Table>
+       <ReCreateIndex>false</ReCreateIndex>
+       <AutorizSQL>true</AutorizSQL>
+       <User>koshkin_as</User>
+       <PW>987654</PW>
+    </Task>
+<!--    
+    <Task>
+       <Name>Passport</Name>
+       <url>http://www.fms.gov.ru/upload/expired-passports/</url>
+       <File_download>list_of_expired_passports.csv.bz2</File_download>
+       <File>list_of_expired_passports.csv</File>
+       <File_import>passport_import.csv</File_import>
+       <Path_Converted>C:\\import\\</Path_Converted>
+       <Download>true</Download>
+
+       <Server>srv-dia_temp</Server>
+       <DataBase>test_import</DataBase>
+       <Table>dbo.tPassport</Table>
+       <ReCreateIndex>false</ReCreateIndex>
+       <AutorizSQL>true</AutorizSQL>
+       <User>koshkin_as</User>
+       <PW>987654</PW>
+    </Task>
+-->         
+  </Tasks>
+  
+  <ProxyHost>192.168.0.100</ProxyHost>
+  <ProxyPort>8080</ProxyPort>
+  <Log>true</Log>
+  <Path_Log>C:\\Temp\\</Path_Log>
+  <BCP>C:\Program Files\Microsoft SQL Server\100\Tools\Binn\bcp.exe</BCP>
+</Settings>

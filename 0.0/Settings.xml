@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+  <url_passport>http://www.fms.gov.ru/upload/expired-passports/</url_passport>
+  <File_arh_passport>list_of_expired_passports.csv.bz2</File_arh_passport>
+  <File_passport>list_of_expired_passports.csv</File_passport>
+  <File_Converted_passport>Passport_import.csv</File_Converted_passport>
+
+  <url_ofac>http://www.treasury.gov/ofac/downloads/</url_ofac>
+  <File_arh_ofac>sdn.csv</File_arh_ofac>
+  <File_ofac>sdn.csv</File_ofac>
+  <File_Converted_ofac>sdn_import.csv</File_Converted_ofac>
+
+  <Download>true</Download>
+  <Path_Converted>C://import//</Path_Converted>
+  
+  <AutorizSQL>true</AutorizSQL>
+  <server>srv-dia_temp</server>
+  <DataBase>test_import</DataBase>
+  <Table_Passport>dbo.tPassport</Table_Passport>
+  <Table_Ofac>dbo.SDNList</Table_Ofac>
+  <user>koshkin_as</user>
+  <pw>987654</pw>
+  <ReCreateIndex>false</ReCreateIndex>
+
+  <ProxyHost>192.168.0.100</ProxyHost>
+  <ProxyPort>8080</ProxyPort>
+  
+  <Log>true</Log>
+  <Path_Log>C:\\Temp\\</Path_Log>
+  
+</Settings>
