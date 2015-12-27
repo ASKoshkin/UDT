@@ -62,7 +62,7 @@ public class DownloadHTTP implements IDownload{
     @Override
     public boolean run() {
         boolean Res = false;
-        System.out.println("скачка задачи "+task.getName());
+        System.out.println("Скачивание файла по задаче "+task.getName());
         
        
         SetEnviroment();
@@ -141,8 +141,9 @@ public class DownloadHTTP implements IDownload{
             }
         } catch (IOException ex) {
             MyLogger.LogSend(Level.SEVERE,ex.getMessage());
-        }
-        
+        }  catch (NullPointerException ex){
+            MyLogger.LogSend(Level.SEVERE,"asdsa"+ex.getMessage());
+        } 
         return Res;
     }
     
@@ -292,11 +293,14 @@ public class DownloadHTTP implements IDownload{
         } catch (IOException ex) {
             MyLogger.LogSend(Level.SEVERE,ex.getMessage()); 
         } catch (IllegalArgumentException ex){
-            MyLogger.LogSend(Level.SEVERE,ex.getMessage());         
-            
+            MyLogger.LogSend(Level.SEVERE,ex.getMessage());  
+        } catch (Exception ex){
+            MyLogger.LogSend(Level.SEVERE,ex.getMessage());  
         } finally{
             try {
-                is.close();
+                if (is!= null){
+                    is.close();
+                }
             } catch (IOException ex) {
                 MyLogger.LogSend(Level.SEVERE,ex.getMessage()); 
             }

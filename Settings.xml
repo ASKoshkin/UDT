@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Settings>
   <Tasks>
-    
+<!--    
     <Task>
        <Name>OFAC</Name>
        <url>https://www.treasury.gov/ofac/downloads/</url>
@@ -19,7 +19,7 @@
        <User>koshkin_as</User>
        <PW>987654</PW>
     </Task>
-<!--    
+-->
     <Task>
        <Name>Passport</Name>
        <url>http://www.fms.gov.ru/upload/expired-passports/</url>
@@ -37,7 +37,7 @@
        <User>koshkin_as</User>
        <PW>987654</PW>
     </Task>
--->         
+         
   </Tasks>
   
   <ProxyHost>192.168.0.100</ProxyHost>
